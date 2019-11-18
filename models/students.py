@@ -7,7 +7,7 @@ class Students(models.Model):
     _name = "students"
     _description = "Sinh viên"
 
-    masv = fields.Char(string="Mã Sinh Viên thu", readonly="1")
+    masv = fields.Char(string="Mã Sinh Viên", readonly="1")
     name = fields.Char(string="Tên Sinh Viên", required="1")
     bod = fields.Date(string="Ngày sinh")
     address = fields.Text(string="Địa chỉ")
